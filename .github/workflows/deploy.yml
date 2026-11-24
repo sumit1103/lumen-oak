@@ -26,7 +26,7 @@ jobs:
         with:
           node-version: 22
       - run: npm install
-      - run: npm run build
+      - run: npm run build -- --base=/lumen-oak/
         env:
           VITE_SUPABASE_URL: ${{ vars.VITE_SUPABASE_URL }}
           VITE_SUPABASE_ANON_KEY: ${{ vars.VITE_SUPABASE_ANON_KEY }}
