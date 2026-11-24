@@ -17,13 +17,15 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: project
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: npm
-      - run: npm ci
+          node-version: 22
+      - run: npm install
       - run: npm run build
         env:
           VITE_SUPABASE_URL: ${{ vars.VITE_SUPABASE_URL }}
@@ -32,7 +34,7 @@ jobs:
           VITE_ENQUIRY_WHATSAPP: ${{ vars.VITE_ENQUIRY_WHATSAPP }}
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: project/dist
 
   deploy:
     needs: build
