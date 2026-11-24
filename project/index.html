@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="theme-color" content="#17130f" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Lumen & Oak Interiors - residential and commercial interior design, with 3D room previews." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <title>Lumen &amp; Oak Interiors</title>
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Lumen &amp; Oak Interiors, back to top">
+        <img class="brand-logo" src="/logo.png" alt="Lumen &amp; Oak Interiors" width="77" height="60" />
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#studio">Studio</a>
+        <a href="#showroom">3D Showroom</a>
+        <a href="#process">Process</a>
+        <a href="#contact" class="nav-cta">Book a consultation</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#showroom">3D Showroom</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Book a consultation</a>
+    </div>
+
+    <main>
+      <section class="hero">
+        <img class="hero-media" src="https://images.pexels.com/photos/6980724/pexels-photo-6980724.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" aria-hidden="true" />
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="hero-inner">
+          <div class="hero-content">
+            <p class="eyebrow reveal">Interior design studio</p>
+            <h1 class="reveal" data-split>Rooms that feel like <em>you</em>, built to live in.</h1>
+            <p class="hero-lead reveal">
+              We design homes, offices, and shops with warm materials, honest craft, and
+              layouts that work from the first day you move in.
+            </p>
+            <div class="hero-actions reveal">
+              <a class="btn btn-primary btn--arrow" href="#contact">Start your project</a>
+              <a class="btn btn-ghost" href="#showroom">Preview in 3D</a>
+            </div>
+          </div>
+          <div class="hero-cards" aria-hidden="true">
+            <figure class="hero-card hero-card--a"><img src="https://images.pexels.com/photos/12277279/pexels-photo-12277279.jpeg?auto=compress&cs=tinysrgb&h=800&w=640" alt="" /><figcaption><span>Bedroom</span>Quiet palette</figcaption></figure>
+            <figure class="hero-card hero-card--b"><img src="https://images.pexels.com/photos/6782576/pexels-photo-6782576.jpeg?auto=compress&cs=tinysrgb&h=480&w=640" alt="" /><figcaption><span>Kitchen</span>Warm oak</figcaption></figure>
+            <figure class="hero-card hero-card--c"><img src="https://images.pexels.com/photos/5825380/pexels-photo-5825380.jpeg?auto=compress&cs=tinysrgb&h=480&w=640" alt="" /><figcaption><span>Living</span>Natural light</figcaption></figure>
+          </div>
+        </div>
+        <ul class="hero-stats reveal">
+          <li><strong data-count="120" data-suffix="+">120+</strong><span>Completed spaces</span></li>
+          <li><strong data-count="8">8</strong><span>Years of practice</span></li>
+          <li><strong data-count="4.9" data-decimals="1">4.9</strong><span>Average client rating</span></li>
+        </ul>
+        <a class="scroll-cue" href="#services" aria-label="Scroll to services"><span></span></a>
+      </section>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Residential design</span><i></i><span>Office &amp; workspace</span><i></i><span>Retail &amp; hospitality</span><i></i><span>3D visualisation</span><i></i><span>Custom joinery</span><i></i><span>Lighting design</span><i></i>
+          <span>Residential design</span><i></i><span>Office &amp; workspace</span><i></i><span>Retail &amp; hospitality</span><i></i><span>3D visualisation</span><i></i><span>Custom joinery</span><i></i><span>Lighting design</span><i></i>
+        </div>
+      </div>
+
+      <section class="section" id="services">
+        <div class="section-head">
+          <p class="eyebrow">What we do</p>
+          <h2>Full-service design, from first sketch to final styling</h2>
+        </div>
+        <div class="service-grid">
+          <article class="card service-card" data-tilt>
+            <div class="service-media"><img src="https://images.pexels.com/photos/5825380/pexels-photo-5825380.jpeg?auto=compress&cs=tinysrgb&h=600&w=800" alt="Bright living room with plants and a cosy sofa" loading="lazy" /></div>
+            <div class="service-body">
+              <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7M5 10v10h14V10M10 20v-6h4v6"/></svg></span>
+              <h3>Residential design</h3>
+              <p>Living rooms, bedrooms, and kitchens planned around how your household really lives.</p>
+              <a class="service-link" href="#portfolio">See projects</a>
+            </div>
+          </article>
+          <article class="card service-card" data-tilt>
+            <div class="service-media"><img src="https://images.pexels.com/photos/13075330/pexels-photo-13075330.jpeg?auto=compress&cs=tinysrgb&h=600&w=800" alt="Home office with wooden furniture" loading="lazy" /></div>
+            <div class="service-body">
+              <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="11" rx="1.5"/><path d="M8 20h8M12 16v4"/></svg></span>
+              <h3>Office and workspace</h3>
+              <p>Calm, productive offices with ergonomic layouts, acoustic comfort, and brand character.</p>
+              <a class="service-link" href="#portfolio">See projects</a>
+            </div>
+          </article>
+          <article class="card service-card" data-tilt>
+            <div class="service-media"><img src="https://images.pexels.com/photos/16641319/pexels-photo-16641319.jpeg?auto=compress&cs=tinysrgb&h=600&w=800" alt="Hotel room with neutral tones" loading="lazy" /></div>
+            <div class="service-body">
+              <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 9l1.5-5h13L20 9M4 9v11h16V9M4 9c0 2 3 2 4 0 1 2 3 2 4 0 1 2 3 2 4 0 1 2 4 2 4 0M10 20v-5h4v5"/></svg></span>
+              <h3>Retail and hospitality</h3>
+              <p>Cafés, boutiques, and studios designed to guide visitors and make them stay longer.</p>
+              <a class="service-link" href="#portfolio">See projects</a>
+            </div>
+          </article>
+          <article class="card service-card" data-tilt>
+            <div class="service-media"><img src="https://images.pexels.com/photos/4968585/pexels-photo-4968585.jpeg?auto=compress&cs=tinysrgb&h=600&w=800" alt="Designer choosing materials and paint samples" loading="lazy" /></div>
+            <div class="service-body">
+              <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3zM12 12l8-4.5M12 12v9M12 12L4 7.5"/></svg></span>
+              <h3>3D visualisation</h3>
+              <p>See your space in three dimensions before a single item is bought or a wall is painted.</p>
+              <a class="service-link" href="#portfolio">See projects</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="portfolio">
+        <div class="section-head">
+          <p class="eyebrow">Selected work</p>
+          <h2>Spaces we are proud of</h2>
+        </div>
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button class="filter is-active" type="button" data-filter="all">All</button>
+          <button class="filter" type="button" data-filter="living">Living</button>
+          <button class="filter" type="button" data-filter="bedroom">Bedroom</button>
+          <button class="filter" type="button" data-filter="kitchen">Kitchen</button>
+          <button class="filter" type="button" data-filter="office">Office</button>
+        </div>
+        <div class="gallery" id="gallery">
+          <figure class="project" data-category="living">
+            <img src="https://images.pexels.com/photos/29012619/pexels-photo-29012619.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Minimalist living room with soft white sofas and large curtains" loading="lazy" />
+            <figcaption><span>Living room</span>Soft minimalism, warm light</figcaption>
+          </figure>
+          <figure class="project" data-category="living">
+            <img src="https://images.pexels.com/photos/7546648/pexels-photo-7546648.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Stylish living room with a blue couch and wall-mounted TV" loading="lazy" />
+            <figcaption><span>Living room</span>Blue accents, layered decor</figcaption>
+          </figure>
+          <figure class="project" data-category="bedroom">
+            <img src="https://images.pexels.com/photos/6585757/pexels-photo-6585757.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Bright modern bedroom with pendant lamps" loading="lazy" />
+            <figcaption><span>Bedroom</span>Pendant light, quiet palette</figcaption>
+          </figure>
+          <figure class="project" data-category="bedroom">
+            <img src="https://images.pexels.com/photos/36099777/pexels-photo-36099777.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Ornate bedroom with rich furnishings" loading="lazy" />
+            <figcaption><span>Bedroom</span>Classic detail, modern comfort</figcaption>
+          </figure>
+          <figure class="project" data-category="kitchen">
+            <img src="https://images.pexels.com/photos/7587864/pexels-photo-7587864.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Contemporary blue kitchen with a granite island" loading="lazy" />
+            <figcaption><span>Kitchen</span>Granite island, sleek storage</figcaption>
+          </figure>
+          <figure class="project" data-category="kitchen">
+            <img src="https://images.pexels.com/photos/7045356/pexels-photo-7045356.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Kitchen with wooden cabinets and black accents" loading="lazy" />
+            <figcaption><span>Kitchen</span>Warm wood, black accents</figcaption>
+          </figure>
+          <figure class="project" data-category="office">
+            <img src="https://images.pexels.com/photos/13075330/pexels-photo-13075330.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Home office with wooden furniture and a glass desk" loading="lazy" />
+            <figcaption><span>Office</span>Wood and glass, focused work</figcaption>
+          </figure>
+          <figure class="project" data-category="office">
+            <img src="https://images.pexels.com/photos/6794970/pexels-photo-6794970.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Open workspace with white desks and blue chairs" loading="lazy" />
+            <figcaption><span>Office</span>Open plan, daylight first</figcaption>
+          </figure>
+                  <figure class="project" data-category="living">
+            <img src="https://images.pexels.com/photos/3952034/pexels-photo-3952034.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Living room with a green sofa, plants and artwork" loading="lazy" />
+            <figcaption><span>Living</span>Green sofa, plants, natural light</figcaption>
+          </figure>
+          <figure class="project" data-category="bedroom">
+            <img src="https://images.pexels.com/photos/33197278/pexels-photo-33197278.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Calm bedroom in neutral tones with soft daylight" loading="lazy" />
+            <figcaption><span>Bedroom</span>Neutral tones, soft daylight</figcaption>
+          </figure>
+          <figure class="project" data-category="kitchen">
+            <img src="https://images.pexels.com/photos/6908354/pexels-photo-6908354.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Bright kitchen with wooden cabinets and large windows" loading="lazy" />
+            <figcaption><span>Kitchen</span>Timber cabinets, big windows</figcaption>
+          </figure>
+          <figure class="project" data-category="living">
+            <img src="https://images.pexels.com/photos/6914713/pexels-photo-6914713.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Cosy sofa by the window with curtains and plants" loading="lazy" />
+            <figcaption><span>Living</span>Window seat and linen curtains</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section studio" id="studio">
+        <div class="studio-grid">
+          <div class="studio-collage">
+            <figure class="studio-main"><img src="https://images.pexels.com/photos/5292199/pexels-photo-5292199.jpeg?auto=compress&cs=tinysrgb&h=1100&w=1000" alt="Interior designer comparing colour swatches at a desk" loading="lazy" data-parallax="0.05" /></figure>
+            <figure class="studio-chip studio-chip--a"><img src="https://images.pexels.com/photos/6583358/pexels-photo-6583358.jpeg?auto=compress&cs=tinysrgb&h=600&w=600" alt="Colour swatches and material samples" loading="lazy" /></figure>
+            <figure class="studio-chip studio-chip--b"><img src="https://images.pexels.com/photos/4968683/pexels-photo-4968683.jpeg?auto=compress&cs=tinysrgb&h=600&w=600" alt="Fabric swatches on a marble surface" loading="lazy" /></figure>
+            <figure class="studio-chip studio-chip--c"><img src="https://images.pexels.com/photos/6583362/pexels-photo-6583362.jpeg?auto=compress&cs=tinysrgb&h=600&w=600" alt="Fabric samples and colour palette" loading="lazy" /></figure>
+            <div class="studio-badge"><strong data-count="300" data-suffix="+">300+</strong><span>Material samples in our library</span></div>
+          </div>
+          <div class="studio-copy">
+            <p class="eyebrow">Our studio</p>
+            <h2>Materials you can touch before you decide</h2>
+            <p class="section-lead">Every project starts with a table of real samples: timber, stone, linen, paint. We build the palette in the room's own light, then confirm it in 3D.</p>
+            <ul class="check-list">
+              <li>Colour boards matched to your daylight</li>
+              <li>Fabric, stone and timber samples delivered to your door</li>
+              <li>A live 3D preview before anything is ordered</li>
+            </ul>
+            <a class="btn btn-primary btn--arrow" href="#showroom">Try the 3D palette</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section showroom" id="showroom">
+        <div class="section-head">
+          <p class="eyebrow">3D showroom</p>
+          <h2>Try a palette before you commit</h2>
+          <p class="section-lead">Step inside a live 3D room. Take the guided tour, switch the light from morning to night, then click any piece to restyle it until the space feels like yours.</p>
+        </div>
+        <div class="filters" id="room-tabs" role="group" aria-label="Choose a room"></div>
+        <div class="showroom-grid">
+          <div class="room-canvas is-loading" id="room-canvas" aria-label="Interactive 3D room preview">
+            <div class="room-hud room-hud--views" role="group" aria-label="Camera views">
+              <button type="button" class="hud-btn is-active" data-view="overview">Overview</button>
+              <button type="button" class="hud-btn" data-view="sofa">Sofa</button>
+              <button type="button" class="hud-btn" data-view="table">Table</button>
+              <button type="button" class="hud-btn" data-view="nook">Reading nook</button>
+              <button type="button" class="hud-btn" data-view="window">Window</button>
+            </div>
+            <div class="room-toolbar">
+              <div class="room-hud" role="group" aria-label="Time of day">
+                <button type="button" class="hud-btn is-active" data-light="day">Morning</button>
+                <button type="button" class="hud-btn" data-light="golden">Golden hour</button>
+                <button type="button" class="hud-btn" data-light="night">Night</button>
+              </div>
+              <div class="room-hud" role="group" aria-label="Showroom tools">
+                <button type="button" class="hud-btn hud-btn--tour" data-tour aria-pressed="false">&#9654; Guided tour</button>
+                <button type="button" class="hud-btn" data-snapshot>Snapshot</button>
+                <button type="button" class="hud-btn" data-fullscreen>Fullscreen</button>
+              </div>
+            </div>
+          </div>
+          <aside class="room-panel card" id="room-panel" aria-label="Room finish controls">
+            <button type="button" class="hud-btn panel-toggle panel-toggle--close" data-panel-toggle aria-expanded="true" aria-controls="room-panel">Minimise &#10005;</button>
+            <div class="room-panel-heading">
+              <p class="eyebrow">Material library</p>
+              <h3>Make it yours</h3>
+              <p>Choose a finish and watch the room restyle itself, or start from a ready-made look.</p>
+              <div class="looks" role="group" aria-label="Ready-made looks">
+                <button type="button" class="look" data-look="0,0,0,0,0,0">Warm earth</button>
+                <button type="button" class="look" data-look="1,1,2,1,2,1">Sage calm</button>
+                <button type="button" class="look" data-look="3,3,2,1,3,3">Coastal</button>
+                <button type="button" class="look" data-look="4,3,3,2,1,3">Midnight</button>
+                <button type="button" class="look look--shuffle" data-look="random" aria-label="Shuffle a random look">Shuffle ✦</button>
+              </div>
+            </div>
+            <div class="finish-group">
+              <div class="finish-label"><span>Furniture in this room</span></div>
+              <div class="furniture-list" id="furniture-list"></div>
+              <label class="furn edit-toggle"><input type="checkbox" id="edit-mode" /> Edit layout (drag furniture to move it)</label>
+              <div class="edit-tools" id="edit-tools" hidden>
+                <p id="edit-sel">Click a furniture item, then drag it</p>
+                <div class="looks">
+                  <button type="button" class="look" data-edit="rotate">Rotate</button>
+                  <button type="button" class="look" data-edit="duplicate">Duplicate</button>
+                  <button type="button" class="look" data-edit="remove">Remove</button>
+                  <button type="button" class="look" data-edit="reset">Reset room</button>
+                </div>
+              </div>
+            </div>
+            <div class="finish-group" data-group="wall">
+              <div class="finish-label"><span>Walls</span><strong data-selected-for="wall">Warm linen</strong></div>
+              <div class="swatches" data-target="wall" role="group" aria-label="Wall finish">
+                <button type="button" class="swatch is-active" data-name="Warm linen" data-color="#efe8dc" style="--swatch:#efe8dc" aria-label="Warm linen"></button>
+                <button type="button" class="swatch" data-name="Sage mist" data-color="#c9d3c4" style="--swatch:#c9d3c4" aria-label="Sage mist"></button>
+                <button type="button" class="swatch" data-name="Clay wash" data-color="#d9a68c" style="--swatch:#d9a68c" aria-label="Clay wash"></button>
+                <button type="button" class="swatch" data-name="Morning blue" data-color="#b9c7d6" style="--swatch:#b9c7d6" aria-label="Morning blue"></button>
+                <button type="button" class="swatch" data-name="Deep charcoal" data-color="#3b3733" style="--swatch:#3b3733" aria-label="Deep charcoal"></button>
+              </div>
+            </div>
+            <div class="finish-group" data-group="slab">
+              <div class="finish-label"><span>Counter slab</span><strong data-selected-for="slab">Ivory quartz</strong></div>
+              <div class="swatches" data-target="slab" role="group" aria-label="Counter slab">
+                <button type="button" class="swatch is-active" data-name="Ivory quartz" data-color="#dcd6cc" style="--swatch:#dcd6cc" aria-label="Ivory quartz"></button>
+                <button type="button" class="swatch" data-name="Grey granite" data-color="#7a7772" style="--swatch:#7a7772" aria-label="Grey granite"></button>
+                <button type="button" class="swatch" data-name="Black granite" data-color="#2f2e2d" style="--swatch:#2f2e2d" aria-label="Black granite"></button>
+                <button type="button" class="swatch" data-name="Beige marble" data-color="#cdbfa6" style="--swatch:#cdbfa6" aria-label="Beige marble"></button>
+              </div>
+            </div>
+            <div class="finish-group" data-group="sofa">
+              <div class="finish-label"><span>Sofa fabric</span><strong data-selected-for="sofa">Walnut boucle</strong></div>
+              <div class="swatches" data-target="sofa" role="group" aria-label="Sofa fabric">
+                <button type="button" class="swatch is-active" data-name="Walnut boucle" data-color="#8a6f5a" style="--swatch:#8a6f5a" aria-label="Walnut boucle"></button>
+                <button type="button" class="swatch" data-name="Forest linen" data-color="#5f7662" style="--swatch:#5f7662" aria-label="Forest linen"></button>
+                <button type="button" class="swatch" data-name="Clay velvet" data-color="#b5654a" style="--swatch:#b5654a" aria-label="Clay velvet"></button>
+                <button type="button" class="swatch" data-name="Slate weave" data-color="#6d7b8d" style="--swatch:#6d7b8d" aria-label="Slate weave"></button>
+                <button type="button" class="swatch" data-name="Oat cotton" data-color="#d8d0c4" style="--swatch:#d8d0c4" aria-label="Oat cotton"></button>
+              </div>
+            </div>
+            <div class="finish-group" data-group="floor">
+              <div class="finish-label"><span>Floor</span><strong data-selected-for="floor">Natural oak</strong></div>
+              <div class="swatches" data-target="floor" role="group" aria-label="Floor finish">
+                <button type="button" class="swatch is-active swatch-texture" data-name="Natural oak" data-color="#c8a98a" style="--swatch:#c8a98a" aria-label="Natural oak"></button>
+                <button type="button" class="swatch swatch-texture" data-name="Smoked oak" data-color="#6b5140" style="--swatch:#6b5140" aria-label="Smoked oak"></button>
+                <button type="button" class="swatch swatch-texture" data-name="Pale ash" data-color="#d8cbb8" style="--swatch:#d8cbb8" aria-label="Pale ash"></button>
+                <button type="button" class="swatch swatch-texture" data-name="Dark walnut" data-color="#3f3028" style="--swatch:#3f3028" aria-label="Dark walnut"></button>
+              </div>
+            </div>
+            <div class="finish-group" data-group="wood">
+              <div class="finish-label"><span>Wood details</span><strong data-selected-for="wood">Walnut stain</strong></div>
+              <div class="swatches" data-target="wood" role="group" aria-label="Wood finish">
+                <button type="button" class="swatch is-active swatch-texture" data-name="Walnut stain" data-color="#6b4f3a" style="--swatch:#6b4f3a" aria-label="Walnut stain"></button>
+                <button type="button" class="swatch swatch-texture" data-name="Honey oak" data-color="#b88652" style="--swatch:#b88652" aria-label="Honey oak"></button>
+                <button type="button" class="swatch swatch-texture" data-name="Blackened ash" data-color="#272421" style="--swatch:#272421" aria-label="Blackened ash"></button>
+              </div>
+            </div>
+                        <div class="finish-group" data-group="rug">
+              <div class="finish-label"><span>Rug</span><strong data-selected-for="rug">Oat weave</strong></div>
+              <div class="swatches" data-target="rug" role="group" aria-label="Rug finish">
+                <button type="button" class="swatch is-active" data-name="Oat weave" data-color="#d9cbb5" style="--swatch:#d9cbb5" aria-label="Oat weave"></button>
+                <button type="button" class="swatch" data-name="Clay stripe" data-color="#c98a6b" style="--swatch:#c98a6b" aria-label="Clay stripe"></button>
+                <button type="button" class="swatch" data-name="Sage field" data-color="#a9b8a3" style="--swatch:#a9b8a3" aria-label="Sage field"></button>
+                <button type="button" class="swatch" data-name="Ink blue" data-color="#51647a" style="--swatch:#51647a" aria-label="Ink blue"></button>
+              </div>
+            </div>
+            <div class="finish-group" data-group="curtain">
+              <div class="finish-label"><span>Curtains</span><strong data-selected-for="curtain">Linen white</strong></div>
+              <div class="swatches" data-target="curtain" role="group" aria-label="Curtain fabric">
+                <button type="button" class="swatch is-active" data-name="Linen white" data-color="#ece4d6" style="--swatch:#ece4d6" aria-label="Linen white"></button>
+                <button type="button" class="swatch" data-name="Sage sheer" data-color="#b7c4b0" style="--swatch:#b7c4b0" aria-label="Sage sheer"></button>
+                <button type="button" class="swatch" data-name="Rose clay" data-color="#d7a995" style="--swatch:#d7a995" aria-label="Rose clay"></button>
+                <button type="button" class="swatch" data-name="Dusk blue" data-color="#8fa3b8" style="--swatch:#8fa3b8" aria-label="Dusk blue"></button>
+              </div>
+            </div>
+            <p class="room-hint">Drag to orbit · Scroll to zoom · Click any furniture to restyle it · Click a lamp to switch it on or off</p>
+          </aside>
+          <button type="button" class="hud-btn panel-toggle panel-toggle--open" data-panel-toggle aria-expanded="false" aria-controls="room-panel" hidden>&#9776; Material library</button>
+        </div>
+      </section>
+
+      <section class="section" id="process">
+        <div class="section-head">
+          <p class="eyebrow">How it works</p>
+          <h2>A clear path from idea to finished room</h2>
+        </div>
+        <ol class="steps">
+          <li class="card step">
+            <span class="step-num">01</span>
+            <h3>Discover</h3>
+            <p>We learn how you use the space, your budget, and the mood you want.</p>
+          </li>
+          <li class="card step">
+            <span class="step-num">02</span>
+            <h3>Design</h3>
+            <p>Concept boards, floor plans, and a 3D preview so you can approve before buying.</p>
+          </li>
+          <li class="card step">
+            <span class="step-num">03</span>
+            <h3>Deliver</h3>
+            <p>Our team manages suppliers, installation, and styling until the space is complete.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="cta-band" aria-label="Book a consultation">
+        <img class="cta-media" src="https://images.pexels.com/photos/12285892/pexels-photo-12285892.jpeg?auto=compress&cs=tinysrgb&h=900&w=1600" alt="" aria-hidden="true" loading="lazy" data-parallax="-0.08" />
+        <div class="cta-inner">
+          <p class="eyebrow">Ready when you are</p>
+          <h2>Let us design a room you never want to leave</h2>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn--arrow" href="#contact">Book a consultation</a>
+            <a class="btn btn-ghost" href="#showroom">Open the 3D showroom</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt contact" id="contact">
+        <div class="contact-intro">
+          <p class="eyebrow">Get in touch</p>
+          <h2>Tell us about your space</h2>
+          <p class="section-lead">Share a few details and we will reply within one working day to arrange a consultation.</p>
+          <ul class="contact-details">
+            <li>studio@lumenandoak.example</li>
+            <li>Mon to Sat, 10:00 to 19:00</li>
+          </ul>
+        </div>
+        <form class="card inquiry-form" id="inquiry-form" novalidate>
+          <div class="field">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" autocomplete="name" maxlength="200" required />
+            <p class="field-error" data-error-for="name"></p>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" maxlength="320" required />
+              <p class="field-error" data-error-for="email"></p>
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel-national" maxlength="10" minlength="10" pattern="[0-9]{10}" placeholder="10-digit mobile number" required />
+              <p class="field-error" data-error-for="phone"></p>
+            </div>
+          </div>
+          <div class="field">
+            <label for="room_type">Type of space</label>
+            <select id="room_type" name="room_type">
+              <option value="">Select one</option>
+              <option>Living room</option>
+              <option>Bedroom</option>
+              <option>Kitchen</option>
+              <option>Dining room</option>
+              <option>Home office</option>
+              <option>Commercial space</option>
+              <option>Whole home</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Project details</label>
+            <textarea id="message" name="message" rows="5" maxlength="3000" required></textarea>
+            <p class="field-error" data-error-for="message"></p>
+          </div>
+          <button class="btn btn-primary btn-block" type="submit">
+            <span class="btn-label">Send enquiry</span>
+          </button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="#top" aria-label="Lumen &amp; Oak Interiors, back to top">
+        <img class="brand-logo" src="/logo.png" alt="Lumen &amp; Oak Interiors" width="77" height="60" />
+      </a>
+          <p>Warm materials, honest craft and rooms that work from the first day.</p>
+        </div>
+        <nav class="footer-col" aria-label="Footer">
+          <h4>Explore</h4>
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#studio">Studio</a>
+          <a href="#showroom">3D Showroom</a>
+        </nav>
+        <div class="footer-col">
+          <h4>Studio</h4>
+          <p>studio@lumenandoak.example</p>
+          <p>Mon to Sat, 10:00 to 19:00</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Lumen &amp; Oak Interiors. All rights reserved.</p>
+        <p>Photography via Pexels</p>
+        <a href="#top">Back to top</a>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
