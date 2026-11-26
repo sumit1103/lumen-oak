@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
     <meta name="theme-color" content="#17130f" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Lumen & Oak Interiors - residential and commercial interior design, with 3D room previews." />
@@ -10,11 +10,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
     <title>Lumen &amp; Oak Interiors</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "./vendor/three/build/three.module.min.js",
+          "three/examples/jsm/": "./vendor/three/examples/jsm/"
+        }
+      }
+    </script>
   </head>
   <body>
     <header class="site-header" id="top">
       <a class="brand" href="#top" aria-label="Lumen &amp; Oak Interiors, back to top">
-        <img class="brand-logo" src="/logo.png" alt="Lumen &amp; Oak Interiors" width="77" height="60" />
+        <img class="brand-logo" src="assets/logo.png" alt="Lumen &amp; Oak Interiors" width="77" height="60" />
       </a>
       <nav class="site-nav" aria-label="Main">
         <a href="#services">Services</a>
@@ -428,7 +437,7 @@
       <div class="footer-top">
         <div class="footer-brand">
           <a class="brand" href="#top" aria-label="Lumen &amp; Oak Interiors, back to top">
-        <img class="brand-logo" src="/logo.png" alt="Lumen &amp; Oak Interiors" width="77" height="60" />
+        <img class="brand-logo" src="assets/logo.png" alt="Lumen &amp; Oak Interiors" width="77" height="60" />
       </a>
           <p>Warm materials, honest craft and rooms that work from the first day.</p>
         </div>
@@ -452,6 +461,6 @@
       </div>
     </footer>
 
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="js/main.js"></script>
   </body>
 </html>

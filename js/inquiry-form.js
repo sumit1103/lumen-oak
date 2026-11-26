@@ -1,11 +1,9 @@
-import { supabase } from './supabase.js'
+import { CONFIG } from './config.js'
 
-// Where enquiries are delivered (set both in .env, then restart `npm run dev`)
-// When true, a failed delivery still shows the success message and keeps a copy in this browser.
-// Set VITE_DEMO_FALLBACK=false in .env for a real, live site.
-const DEMO_FALLBACK = String(import.meta.env.VITE_DEMO_FALLBACK ?? 'true') !== 'false'
-const OWNER_EMAIL = (import.meta.env.VITE_ENQUIRY_EMAIL ?? '').trim()
-const OWNER_WHATSAPP = String(import.meta.env.VITE_ENQUIRY_WHATSAPP ?? '').replace(/\D/g, '')
+// Settings live in js/config.js
+const DEMO_FALLBACK = CONFIG.DEMO_FALLBACK !== false
+const OWNER_EMAIL = (CONFIG.ENQUIRY_EMAIL ?? '').trim()
+const OWNER_WHATSAPP = String(CONFIG.ENQUIRY_WHATSAPP ?? '').replace(/\D/g, '')
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 const PHONE_PATTERN = /^[0-9]{10}$/
@@ -49,7 +47,7 @@ function withTimeout(ms) {
 
 // 1) Email to the studio owner (FormSubmit: no backend needed)
 async function sendEmail(values) {
-  if (!OWNER_EMAIL) throw new Error('VITE_ENQUIRY_EMAIL is not set in .env')
+  if (!OWNER_EMAIL) throw new Error('ENQUIRY_EMAIL is not set in js/config.js')
   const t = withTimeout(15000)
   try {
     const res = await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(OWNER_EMAIL)}`, {
@@ -76,21 +74,32 @@ async function sendEmail(values) {
   }
 }
 
-// 2) Backup copy in the database
+// 2) Backup copy in the database (Supabase REST API, no SDK needed)
 async function saveToDatabase(values) {
+  if (!CONFIG.SUPABASE_URL || !CONFIG.SUPABASE_ANON_KEY) throw new Error('Supabase is not configured')
   const t = withTimeout(12000)
   try {
-    const { error } = await supabase
-      .from('design_inquiries')
-      .insert({
+    const res = await fetch(`${CONFIG.SUPABASE_URL}/rest/v1/design_inquiries`, {
+      method: 'POST',
+      signal: t.signal,
+      headers: {
+        'Content-Type': 'application/json',
+        apikey: CONFIG.SUPABASE_ANON_KEY,
+        Authorization: `Bearer ${CONFIG.SUPABASE_ANON_KEY}`,
+        Prefer: 'return=minimal',
+      },
+      body: JSON.stringify({
         name: values.name,
         email: values.email,
         phone: values.phone,
         room_type: values.room_type || null,
         message: values.message,
-      })
-      .abortSignal(t.signal)
-    if (error) throw error
+      }),
+    })
+    if (!res.ok) {
+      const body = await res.json().catch(() => ({}))
+      throw new Error(body.message || `Database error (${res.status})`)
+    }
   } finally {
     t.done()
   }
@@ -194,7 +203,6 @@ export function setupInquiryForm(form) {
       console.error('Inquiry submission failed', err)
       let text = 'We could not send your enquiry just now. Please try again in a moment.'
       if (!navigator.onLine) text = 'You appear to be offline. Please check your internet connection and try again.'
-      else if (import.meta.env.DEV && err?.details) text += ` [dev: ${err.details.join(' | ')}]`
       setStatus(statusEl, text, 'error')
       showFallbackLinks(statusEl, values)
     } finally {

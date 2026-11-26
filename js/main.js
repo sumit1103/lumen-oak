@@ -1,6 +1,5 @@
-import './style.css'
-import { createRoomViewer } from './src/room3d.js'
-import { setupInquiryForm } from './src/inquiry-form.js'
+import { createRoomViewer } from './room3d.js'
+import { setupInquiryForm } from './inquiry-form.js'
 import {
   setupGalleryFilter,
   setupHeader,
@@ -21,7 +20,7 @@ import {
   setupRoomPicker,
   showEditSelection,
   setupPanelToggle,
-} from './src/site-ui.js'
+} from './site-ui.js'
 
 setupHeadlineSplit()
 setupHeader()
